@@ -1,5 +1,9 @@
-.name-row, .chapter-row, .moment-row {
+.container
+
+.name-row, .chapter-row, .moment-row, .yoga-row, .sports-row, .food-row, .nightin-row, .quote-row {
   height: 800px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, .3);
+  margin-top: 5%;
 }
 
 .name-row h1 {
@@ -46,18 +50,18 @@
   font-weight: lighter;
 }
 
-.moment-row {
-  padding-top: 5%;
+.moment-row, .yoga-row, .sports-row, .food-row, .nightin-row, .quote-row {
+  padding-top: 7%;
 }
 
-.moment-row h1 {
+.moment-row h1, .yoga-row h1, .sports-row h1, .food-row h1, .nightin-row h1 {
   text-align: center;
   font-size: 3vw;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: bolder;
 }
 
-.moment-row h2 {
+.moment-row h2, .yoga-row h2, .sports-row h2, .food-row h2, .nightin-row h2 {
   text-align: center;
   font-size: 2vw;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -71,26 +75,53 @@
   margin-right: auto;
   width: 70%;
 }
-/* 
-.slide-left {
-  transform: translateX(-100px);
-  opacity: 0;
-  transition: opacity 1s;
-} */
 
-.slide-in-left {
-  /* transform: translateX(0px);
-  opacity: 1; */
+.momentimg:hover {
+  cursor:pointer
+}
+
+.slide-left-anim {
   animation: slide-left-animation 1s ease-in-out both;
+}
+
+.slide-right-anim {
+  animation: slide-right-animation 1s ease-in-out both;
+}
+
+.appear-anim {
+  animation: appear-animation 1s ease-in-out both;
+
 }
 
 @keyframes slide-left-animation {
   0% {
-    transform: translateX(-100px);
+    transform: translateX(-300px);
     opacity: 0;
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right-animation {
+  0% {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes appear-animation {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
     opacity: 1;
   }
 }

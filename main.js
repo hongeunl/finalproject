@@ -30,25 +30,60 @@ function check(entry) {
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
-const animate = document.querySelectorAll(".slide-left");
+const animateLeft = document.querySelectorAll(".slide-left");
+const animateRight = document.querySelectorAll(".slide-right");
+const animateAppear = document.querySelectorAll(".appear");
 
-const callback = (entries, observer) => {
+const callbackLeft = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add("slide-in-left");
+      entry.target.classList.add("slide-left-anim");
+  }
+     else {
+    entry.target.classList.remove("slide-left-anim");
+  } 
+})
+}
+
+const callbackRight = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("slide-right-anim");
   }
     else {
-    entry.target.classList.remove('slide-in-left');
+    entry.target.classList.remove("slide-right-anim");
+  }
+})
+}
+
+const callbackAppear = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("appear-anim");
+  }
+    else {
+    entry.target.classList.remove("appear-anim");
   }
 })
 }
 
 const options = {}
-const observer = new IntersectionObserver(callback, options);
+const observerLeft = new IntersectionObserver(callbackLeft, options);
+const observerRight = new IntersectionObserver(callbackRight, options);
+const observerAppear = new IntersectionObserver(callbackAppear, options);
 
-animate.forEach(element => {
-  observer.observe(element)
+animateLeft.forEach(element => {
+  observerLeft.observe(element)
 })
+
+animateRight.forEach(element => {
+  observerRight.observe(element)
+})
+
+animateAppear.forEach(element => {
+  observerAppear.observe(element)
+})
+
 });
 
 /* entries => {
