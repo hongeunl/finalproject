@@ -1,0 +1,96 @@
+.name-row, .chapter-row, .moment-row {
+  height: 800px;
+}
+
+.name-row h1 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 5vw;
+  line-height: auto;
+}
+
+.name-row h2 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 4vw;
+  line-height: auto;
+  padding-top: 20px;
+}
+
+.arrow-row {
+  position:sticky;
+  size: 100px;
+}
+
+.scroll-row {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 510;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.chapter-row h1 {
+  text-align: center;
+  font-size: 4vw;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.chapter-row h2 {
+  text-align: center;
+  font-size: 3vw;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.moment-row {
+  padding-top: 5%;
+}
+
+.moment-row h1 {
+  text-align: center;
+  font-size: 3vw;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.moment-row h2 {
+  text-align: center;
+  font-size: 2vw;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  padding: 3%;
+}
+
+.momentimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+/* 
+.slide-left {
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: opacity 1s;
+} */
+
+.slide-in-left {
+  /* transform: translateX(0px);
+  opacity: 1; */
+  animation: slide-left-animation 1s ease-in-out both;
+}
+
+@keyframes slide-left-animation {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
