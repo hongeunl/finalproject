@@ -2,31 +2,15 @@ function playAudio(audioNum) {
   var audio = document.getElementById(audioNum);
   audio.play();
 }
-/* 
-const options = {}
-const animateElements = document.querySelector('.slide-left')
-const callback = (entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('slide-in-left');
-    }
-  });
-}
 
-let observer = new IntersectionObserver(callback, options);
-
-observer.observe(animateElements); */
-
-/* 
-function check(entry) {
-  if (entry.isIntersecting) {
-    entry.target.classList.add("slide-in-left");
-    console.log(entry);
-  return;
+//http://talkerscode.com/webtricks/smooth-scrolling-to-div-using-jquery.php//
+function scrollToDiv(div_id) {
+  $("html, body").animate(
+    {
+      scrollTop: $("#"+div_id).offset().top
+    }, 100);
   }
 
-  entry.target.classList.remove("slide-in-left");
-} */
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
@@ -85,6 +69,18 @@ animateAppear.forEach(element => {
 })
 
 });
+
+
+
+
+/* $(document).ready(function() {
+  $(".scroll-to").click(function(event) {
+      event.preventDefault();
+      $("html, body").animate({
+          scrollTop: $(".chapter-row").offset().top
+        }, 500);
+    });
+}); */
 
 /* entries => {
   entries.forEach(entry => {
