@@ -18,10 +18,6 @@
 
   <body>
     <div class="container">
-     <!--  <div class="row arrow-row justify-content-end">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/></svg>
-      </div> -->
       <div class="row name-row align-items-center">
         <div class="col-4 offset-2 appear">
           <h1>CLARE<br>
@@ -37,18 +33,21 @@
       <br>
       <br>
 
-      <div class="row arrow-row justify-content-end">
+      <!-- <div class="row arrow-row justify-content-end">
         <div class="col-12">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/></svg>
        </div>
       </div>
+      <br>
+      <br>
         
       <div class="row scroll-row justify-content-end">
         <div class="col-12">
         Click Button or Scroll
         </div>
       </div>
+      <br> -->
 
       <div class="row chapter-row justify-content-center align-items-center text-center" id="chapter-row">
         <div class="col-6">
@@ -65,9 +64,13 @@
           <h2 class="slide-left">“Because when you stop and look around, <br>this life is pretty amazing.” - Dr. Seuss</h2>
         </div>
         <div class="col-6 pageTwo">
-          <audio src="moment.m4a" id="audio2"></audio>
-          <img src="nightmoment.gif" class="momentimg slide-right" alt="leaves gently rustling in the wind at night"
-          onclick="playAudio('audio2')">
+          <div class="img-container">
+            <audio src="moment.m4a" id="audio2"></audio>
+            <img src="nightmoment.gif" class="momentimg slide-right" alt="leaves gently rustling in the wind at night"
+            onclick="playAudio('audio2')">
+            <img src="volume.png" class="volumeimg slide-right" alt="Gif Volume On">
+            <!-- https://www.iconsdb.com/white-icons/volume-up-4-icon.html -->
+          </div>
           <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('yoga-row')">
         </div>
       </div>
@@ -79,9 +82,12 @@
           <h2 class="slide-left">"Only do it to the point where your body<br> feels good - not more, not less.”</h2>
         </div>
         <div class="col-6 pageFour">
-          <audio src="test.m4a" id="audio1"></audio>
-          <img src="yoga2.gif" class="img-fluid momentimg slide-right" alt="doing yoga in a dim room"
-          onclick="playAudio('audio1')">
+          <div class="img-container">
+            <audio src="test.m4a" id="audio1"></audio>
+            <img src="yoga2.gif" class="img-fluid momentimg slide-right" alt="doing yoga in a dim room"
+            onclick="playAudio('audio1')">
+            <img src="volume.png" class="volumeimg slide-right" alt="Gif Volume On">
+        </div>
           <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('sports-row')">
         </div>
       </div>
@@ -93,9 +99,12 @@
           <h2 class="slide-left">“It’s a good day to be alive.”</h2>
         </div>
         <div class="col-6 pageSix">
-          <audio src="test.m4a" id="audio1"></audio>
-          <img src="scuba.gif" class="momentimg slide-right" alt="scuba diving"
-          onclick="playAudio('audio1')">
+          <div class="img-container">
+            <audio src="test.m4a" id="audio1"></audio>
+            <img src="scuba.gif" class="momentimg slide-right" alt="scuba diving"
+            onclick="playAudio('audio1')">
+            <img src="volume.png" class="volumeimg slide-right" alt="Gif Volume On">
+          </div>
           <br>
           <img src="skydive.JPG" class="img-fluid skydiveimg slide-right" alt="skydiving with victory hands">
           <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('food-row')">
@@ -109,9 +118,12 @@
           <h2 class="slide-left">“Food is life. Life is food.”</h2>
         </div>
         <div class="col-6 pageEight">
-          <audio src="test.m4a" id="audio1"></audio>
-          <img src="foodgif.gif" class="momentimg slide-right" alt="Steaming hot seafood pasta"
-          onclick="playAudio('audio1')">
+          <div class="img-container">
+            <audio src="test.m4a" id="audio1"></audio>
+            <img src="foodgif.gif" class="momentimg slide-right" alt="Steaming hot seafood pasta"
+            onclick="playAudio('audio1')">
+            <img src="volume.png" class="volumeimg slide-right" alt="Gif Volume On">
+          </div>
           <br>
           <img src="koreanfood.png" class="img-fluid skydiveimg slide-right" alt="various delicious dishes on a table">
           <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('nightin-row')">

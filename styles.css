@@ -34,29 +34,29 @@
   line-height: auto;
 }
 
-.arrow-row {
+/* .arrow-row {
   position: -webkit-sticky;
   position: sticky;
   float: right;
-  top: 55%;
-  bottom: 10px;
-  right: 10px;
+  top: 80%;
 /*   bottom: 9%;
-  right: 15%; */
+  right: 15%;
   size: 100px;
 }
 
 .scroll-row {
+  position: -webkit-sticky;
   position: sticky;
-  top: 0;
+  float: right;
+  top: 85%;
   bottom: 7%;
-  right: 11%;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 510;
   font-size: 18px;
   line-height: 21px;
 }
+ */
 
 .chapter-row h1 {
   text-align: center;
@@ -77,6 +77,9 @@
   align-items: center;
 } */
 
+.img-container {
+  position: relative;
+}
 
 .moment-row, .yoga-row, .sports-row, .food-row, .nightin-row {
   margin-top: 7%;
@@ -94,7 +97,7 @@
 
 .quote-row h1 {
   text-align: center;
-  font-size: 3vw;
+  font-size: 2vw;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-weight: bolder;
   padding-bottom: 6%;
@@ -108,11 +111,20 @@
   padding: 3%;
 }
 
-.momentimg, .movieimg {
+.momentimg, .movieimg, .volumeimg {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-  display: table-cell;
+}
+
+.volumeimg {
+  position: absolute;
+  bottom: 0;
+  right: 11%;
+  width: 8%;
+
+
 }
 
 .skydiveimg {
