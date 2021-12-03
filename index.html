@@ -58,6 +58,7 @@
       </div>
       <br>
       <br>
+
       <div class="row moment-row justify-content-center align-items-center" id="moment-row">
         <div class="col-6 pageOne">
           <h1 class="appear">Taking a walk & having a moment</h1>
@@ -65,10 +66,9 @@
         </div>
         <div class="col-6 pageTwo">
           <div class="img-container">
-            <audio src="moment.m4a" id="audio2"></audio>
-            <img src="nightmoment.gif" class="momentimg slide-right" alt="leaves gently rustling in the wind at night"
-            onclick="playAudio('audio2')">
-            <img src="volume.png" class="volumeimg slide-right" alt="Gif Volume On">
+            <audio src="moment.m4a" id="audio1"></audio>
+            <img src="nightmoment.gif" class="momentimg slide-right" alt="Leaves Gently Rustling In The Wind At Night">
+            <img src="volume.png" class="volumeimg slide-right" alt="Gif Volume On" onclick="playAudio('audio1')">
             <!-- https://www.iconsdb.com/white-icons/volume-up-4-icon.html -->
           </div>
           <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('yoga-row')">
@@ -76,6 +76,7 @@
       </div>
       <br>
       <br>
+
       <div class="row yoga-row justify-content-center align-items-center" id="yoga-row">
         <div class="col-6 pageThree">
           <h1 class="appear">Doing yoga just the right amount</h1>
@@ -83,16 +84,16 @@
         </div>
         <div class="col-6 pageFour">
           <div class="img-container">
-            <audio src="test.m4a" id="audio1"></audio>
-            <img src="yoga2.gif" class="img-fluid momentimg slide-right" alt="doing yoga in a dim room"
-            onclick="playAudio('audio1')">
-            <img src="volume.png" class="volumeimg slide-right" alt="Gif Volume On">
+            <audio src="yogasound.m4a" id="audio2"></audio>
+            <img src="yoga2.gif" class="img-fluid momentimg slide-right" alt="doing yoga in a dim room">
+            <img src="volume.png" class="volumeimg slide-right" alt="Gif Volume On" onclick="playAudio('audio2')">
         </div>
           <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('sports-row')">
         </div>
       </div>
       <br>
       <br>
+
       <div class="row sports-row justify-content-center align-items-center" id="sports-row">
         <div class="col-6 pageFive">
           <h1 class="appear">Getting an adrenaline rush <br>from facing my fears</h1>
@@ -100,10 +101,9 @@
         </div>
         <div class="col-6 pageSix">
           <div class="img-container">
-            <audio src="test.m4a" id="audio1"></audio>
-            <img src="scuba.gif" class="momentimg slide-right" alt="scuba diving"
-            onclick="playAudio('audio1')">
-            <img src="volume.png" class="volumeimg slide-right" alt="Gif Volume On">
+            <audio src="scubasound.m4a" id="audio3"></audio>
+            <img src="scuba.gif" class="momentimg slide-right" alt="scuba diving">
+            <img src="volume.png" class="volumeimg slide-right" alt="Gif Volume On" onclick="playAudio('audio3')">
           </div>
           <br>
           <img src="skydive.JPG" class="img-fluid skydiveimg slide-right" alt="skydiving with victory hands">
@@ -112,6 +112,7 @@
       </div>
       <br>
       <br>
+
       <div class="row food-row justify-content-center align-items-center" id="food-row">
         <div class="col-6 pageSeven">
           <h1 class="appear">Enjoying good food <br>together with people I love</h1>
@@ -119,10 +120,9 @@
         </div>
         <div class="col-6 pageEight">
           <div class="img-container">
-            <audio src="test.m4a" id="audio1"></audio>
-            <img src="foodgif.gif" class="momentimg slide-right" alt="Steaming hot seafood pasta"
-            onclick="playAudio('audio1')">
-            <img src="volume.png" class="volumeimg slide-right" alt="Gif Volume On">
+            <audio src="foodsound.m4a" id="audio4"></audio>
+            <img src="foodgif.gif" class="momentimg slide-right" alt="Steaming Hot Seafood Pasta">
+            <img src="volume.png" class="volumeimg slide-right" alt="Gif Volume On" onclick="playAudio('audio4')">
           </div>
           <br>
           <img src="koreanfood.png" class="img-fluid skydiveimg slide-right" alt="various delicious dishes on a table">
@@ -131,21 +131,25 @@
       </div>
       <br>
       <br>
+
       <div class="row nightin-row justify-content-center align-items-center" id="nightin-row">
         <div class="col-6 pageNine">
-          <h1 class="appear">Having a night-in with <br>great movies and shows</h1>
-          <h2 class="slide-left">TBD</h2>
+          <h1 class="appear">Having a night-in with  <br>great movies and shows</h1>
+          <h2 class="slide-left">"Nothing better than the combination of <br>snacks, blankets, and movies."</h2>
         </div>
         <div class="col-6 pageTen">
-          <audio src="test.m4a" id="audio1"></audio>
-          <div class="flip-card">
-            <div class="flip-card-layout">
-              <div class="unflipped-card">
-                <img src="queensgambit.jpg" class="movieimg slide-right" alt="Poster Of The TV Show Queens Gambit"
-                onclick="playAudio('audio1')">
-              </div>
-              <div class="flipped-card">
-                <h1>Binge watched for 9+ hours</h1>
+          <div class="movie-container">
+            <img src="movie.png" class="img-fluid skydiveimg slide-right" alt="Disney Movie Projected On The Wall">
+            <audio src="test.m4a" id="audio1"></audio>
+            <div class="flip-card">
+              <div class="flip-card-layout">
+                <div class="unflipped-card">
+                  <img src="queensgambit.jpg" class="img-fluid movieimg slide-right" alt="Poster Of The TV Show Queens Gambit"
+                  style="width:100%;height:100%">
+                </div>
+                <div class="flipped-card align">
+                  <h1>Binge watched for 9+ hours and enjoyed every second of it!</h1>
+                </div>
               </div>
             </div>
           </div>
@@ -154,16 +158,17 @@
       </div>
       <br>
       <br>
+
       <div class="row quote-row justify-content-center align-items-center" id="quote-row">
         <div class="col-10">
-          <h1 class="appear">"To see the world, things dangerous to come to, <br>to see behind walls, draw closer, <br>to find each other, and to feel. <br>That is the purpose of life."  - Walter Mitty</h1>
+          <h1 class="appear">"To see the world, things dangerous to come to, <br>to see behind walls, draw closer, <br>to find each other, and to feel. <br>That is the purpose of life."
+            <br><br>- The Secret Life of Walter Mitty</h1>
           <audio src="test.m4a" id="audio1"></audio>
           <img src="waltermitty.png" class="momentimg appear" alt="A Man Standing On Top Of A Mountain"
           onclick="playAudio('audio1')">
           <!-- https://writersodysseydotcom.files.wordpress.com/2016/02/the_secret_life_of_walter_mitty_by_janvavrusa-d7i49y9.png -->
         </div>
       </div>
-
 
     </div>
 

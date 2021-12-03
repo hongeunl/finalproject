@@ -77,10 +77,6 @@
   align-items: center;
 } */
 
-.img-container {
-  position: relative;
-}
-
 .moment-row, .yoga-row, .sports-row, .food-row, .nightin-row {
   margin-top: 7%;
   display:flex;
@@ -111,11 +107,15 @@
   padding: 3%;
 }
 
-.momentimg, .movieimg, .volumeimg {
+.momentimg {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+}
+
+.img-container {
+  position: relative;
 }
 
 .volumeimg {
@@ -123,8 +123,14 @@
   bottom: 0;
   right: 11%;
   width: 8%;
+}
 
+.volumeimg:hover {
+  cursor:pointer
+}
 
+.movie-container {
+  padding-bottom: 300px;
 }
 
 .skydiveimg {
@@ -132,10 +138,6 @@
   margin-right: auto;
   width: 60%;
   display: table-cell;
-}
-
-.momentimg:hover {
-  cursor:pointer
 }
 
 .profileimg {
@@ -192,8 +194,13 @@
   }
 }
 
+/* reference: https://www.w3schools.com/howto/howto_css_flip_card.asp */
 .flip-card {
+  display: block;
   background-color: transparent;
+  min-width: 40%;
+  width: 400px;
+  margin-left: 20%;
   /* border: 1px solid #f1f1f1; */
   perspective: 1000px;
 }
@@ -216,10 +223,17 @@
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  align-items: center;
 }
 
 .flipped-card h1 {
-  height: 100%;
+  display: inline-block;
+  height: 300px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  padding: 50px 12px;
+  padding-top: 100px;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -229,8 +243,8 @@
 
 /* Style the back side */
 .flipped-card {
-  background-color: white;
-  color: black;
+  background-color: black;
+  color: white;
   transform: rotateY(180deg);
 }
 
