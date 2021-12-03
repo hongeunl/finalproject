@@ -19,7 +19,6 @@
   font-style: normal;
   font-weight: bolder;
   font-size: 5vw;
-  line-height: auto;
 }
 
 .name-row h2 {
@@ -27,7 +26,6 @@
   font-style: normal;
   font-weight: lighter;
   font-size: 4vw;
-  line-height: auto;
 }
 
 .chapter-row h1 {
@@ -229,7 +227,6 @@
 .unflipped-card, .flipped-card {
   position: absolute;
   width: 100%;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   align-items: center;
 }
