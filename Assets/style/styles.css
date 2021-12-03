@@ -1,0 +1,256 @@
+.container {
+  position: relative;
+}
+
+.row {
+  position: relative;
+  height: 800px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, .3);
+  margin-top: 5%;
+}
+
+.name-row, .chapter-row {
+  background-image: linear-gradient(90deg, rgba(230,230,230,1) 0%, rgba(237,237,237,0) 18%);
+  background-size: 100%
+}
+
+.name-row h1 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 5vw;
+  line-height: auto;
+}
+
+.name-row h2 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 4vw;
+  line-height: auto;
+}
+
+.chapter-row h1 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 4vw;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.chapter-row h2 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 3vw;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.moment-row, .yoga-row, .sports-row, .food-row, .nightin-row {
+  margin-top: 7%;
+  display:flex;
+  background-image: linear-gradient(90deg, rgba(230,230,230,1) 0%, rgba(237,237,237,0) 18%);
+  background-size: 50%;
+}
+
+.moment-row h1, .yoga-row h1, .sports-row h1, .food-row h1, .nightin-row h1 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 2.1vw;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.moment-row h2, .yoga-row h2, .sports-row h2, .food-row h2, .nightin-row h2 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  font-weight: normal;
+  padding: 3%;
+  text-align: center;
+}
+
+.quote-row h1 {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+  font-weight: bolder;
+  padding-bottom: 6%;
+  text-align: center;
+}
+
+
+/* Buttons that enable users to scroll to the next page */
+.name-row-button {
+  margin-top: 20%;
+  width: 200px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  background-color: skyblue;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.next-button {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  margin-top: 5%;
+  width: 150px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  text-align: center;
+  background-color: skyblue !important;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+
+/* Style for the images */
+.profileimg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-top: 5%;
+  display: table-cell;
+}
+
+.mainimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.sideimg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  display: table-cell;
+}
+
+.img-container {
+  position: relative;
+}
+
+.movie-container {
+  padding-bottom: 300px;
+}
+
+.volumeimg {
+  position: absolute;
+  bottom: 0;
+  right: 11%;
+  width: 8%;
+}
+
+.volumeimg:hover {
+  cursor:pointer
+}
+
+
+/* CSS animation classes */
+.slide-left-anim {
+  animation: slide-left-animation 1s ease-in-out both;
+}
+
+.slide-right-anim {
+  animation: slide-right-animation 1s ease-in-out both;
+}
+
+.appear-anim {
+  animation: appear-animation 1s ease-in-out both;
+}
+
+@keyframes slide-left-animation {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-right-animation {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes appear-animation {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Card Flip Animation --> reference: https://www.w3schools.com/howto/howto_css_flip_card.asp */
+.flip-card {
+  background-color: transparent;
+  display: block;
+  margin-left: 20%;
+  min-width: 40%;
+  perspective: 1000px;
+  width: 400px;
+}
+
+.flip-card-layout {
+  position: relative;
+  width: 50%;
+  margin: 10%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-layout {
+  transform: rotateY(180deg);
+}
+
+.unflipped-card, .flipped-card {
+  position: absolute;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  align-items: center;
+}
+
+.flipped-card h1 {
+  display: inline-block;
+  height: 300px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  padding: 50px 12px;
+  padding-top: 100px;
+}
+
+.unflipped-card {
+  color: black;
+}
+
+.flipped-card {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+}
+

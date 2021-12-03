@@ -4,19 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="Assets/style/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="main.js" type="text/javascript" defer></script>
+    <script src="Assets/scripts/main.js" type="text/javascript" defer></script>
 
     
     <title>Clare Lee</title>
   </head>
 
   <body>
+
     <div class="container">
       <div class="row name-row align-items-center">
         <div class="col-4 offset-2 appear">
@@ -27,27 +28,10 @@
           <input type="button" class="name-row-button" value="Let's Begin" onclick="scrollToDiv('chapter-row')">
         </div>
         <div class="col-6 appear">
-          <img src="clareprofile.png" class="profileimg slide-right" alt="Profile Photo Of Me Sitting On The Floor">
+          <img src="Assets/images/clareprofile.png" class="profileimg slide-right" alt="profile photo of a smiling person sitting on the floor">
         </div>
       </div>
-      <br>
-      <br>
-
-      <!-- <div class="row arrow-row justify-content-end">
-        <div class="col-12">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/></svg>
-       </div>
-      </div>
-      <br>
-      <br>
-        
-      <div class="row scroll-row justify-content-end">
-        <div class="col-12">
-        Click Button or Scroll
-        </div>
-      </div>
-      <br> -->
+      <br><br>
 
       <div class="row chapter-row justify-content-center align-items-center text-center" id="chapter-row">
         <div class="col-6">
@@ -56,8 +40,7 @@
           <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('moment-row')">
         </div>
       </div>
-      <br>
-      <br>
+      <br><br>
 
       <div class="row moment-row justify-content-center align-items-center" id="moment-row">
         <div class="col-6 pageOne">
@@ -66,16 +49,16 @@
         </div>
         <div class="col-6 pageTwo">
           <div class="img-container">
-            <audio src="moment.m4a" id="audio1"></audio>
-            <img src="nightmoment.gif" class="momentimg slide-right" alt="Leaves Gently Rustling In The Wind At Night">
-            <img src="volume.png" class="volumeimg slide-right" alt="Gif Volume On" onclick="playAudio('audio1')">
-            <!-- https://www.iconsdb.com/white-icons/volume-up-4-icon.html -->
+            <audio src="Assets/audio/momentsound.m4a" id="audio1"></audio>
+            <img src="Assets/gifs/nightmoment.gif" class="mainimg slide-right" alt="leaves gently rustling in the wind at night">
+            <img src="Assets/images/volume.png" class="volumeimg slide-right" alt="gif volume on" onclick="playAudio('audio1')">
+            <!-- icon source: https://www.iconsdb.com/white-icons/volume-up-4-icon.html -->
           </div>
           <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('yoga-row')">
         </div>
       </div>
-      <br>
-      <br>
+      <br><br>
+
 
       <div class="row yoga-row justify-content-center align-items-center" id="yoga-row">
         <div class="col-6 pageThree">
@@ -84,15 +67,16 @@
         </div>
         <div class="col-6 pageFour">
           <div class="img-container">
-            <audio src="yogasound.m4a" id="audio2"></audio>
-            <img src="yoga2.gif" class="img-fluid momentimg slide-right" alt="doing yoga in a dim room">
-            <img src="volume.png" class="volumeimg slide-right" alt="Gif Volume On" onclick="playAudio('audio2')">
-        </div>
+            <audio src="Assets/audio/yogasound.m4a" id="audio2"></audio>
+            <img src="Assets/gifs/yoga2.gif" class="img-fluid mainimg slide-right" alt="a person doing yoga in a dim room">
+            <img src="Assets/images/volume.png" class="volumeimg slide-right" alt="gif volume on" onclick="playAudio('audio2')">
+            <!-- icon source: https://www.iconsdb.com/white-icons/volume-up-4-icon.html -->
+          </div>
           <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('sports-row')">
         </div>
       </div>
-      <br>
-      <br>
+      <br><br>
+
 
       <div class="row sports-row justify-content-center align-items-center" id="sports-row">
         <div class="col-6 pageFive">
@@ -101,17 +85,17 @@
         </div>
         <div class="col-6 pageSix">
           <div class="img-container">
-            <audio src="scubasound.m4a" id="audio3"></audio>
-            <img src="scuba.gif" class="momentimg slide-right" alt="scuba diving">
-            <img src="volume.png" class="volumeimg slide-right" alt="Gif Volume On" onclick="playAudio('audio3')">
+            <audio src="Assets/audio/scubasound.m4a" id="audio3"></audio>
+            <img src="Assets/gifs/scuba.gif" class="mainimg slide-right" alt="a person scuba diving">
+            <img src="Assets/images/volume.png" class="volumeimg slide-right" alt="gif volume on" onclick="playAudio('audio3')">
+            <!-- icon source: https://www.iconsdb.com/white-icons/volume-up-4-icon.html -->
           </div>
           <br>
-          <img src="skydive.JPG" class="img-fluid skydiveimg slide-right" alt="skydiving with victory hands">
+          <img src="Assets/images/skydive.JPG" class="img-fluid sideimg slide-right" alt="a person skydiving with victory hands">
           <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('food-row')">
         </div>
       </div>
-      <br>
-      <br>
+      <br><br>
 
       <div class="row food-row justify-content-center align-items-center" id="food-row">
         <div class="col-6 pageSeven">
@@ -120,17 +104,17 @@
         </div>
         <div class="col-6 pageEight">
           <div class="img-container">
-            <audio src="foodsound.m4a" id="audio4"></audio>
-            <img src="foodgif.gif" class="momentimg slide-right" alt="Steaming Hot Seafood Pasta">
-            <img src="volume.png" class="volumeimg slide-right" alt="Gif Volume On" onclick="playAudio('audio4')">
+            <audio src="Assets/audio/foodsound.m4a" id="audio4"></audio>
+            <img src="Assets/gifs/foodgif.gif" class="mainimg slide-right" alt="steaming hot seafood pasta on the table">
+            <img src="Assets/images/volume.png" class="volumeimg slide-right" alt="gif volume on" onclick="playAudio('audio4')">
+            <!-- icon source: https://www.iconsdb.com/white-icons/volume-up-4-icon.html -->
           </div>
           <br>
-          <img src="koreanfood.png" class="img-fluid skydiveimg slide-right" alt="various delicious dishes on a table">
+          <img src="Assets/images/koreanfood.png" class="img-fluid sideimg slide-right" alt="various delicious dishes on a table in a restaurant terrace">
           <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('nightin-row')">
         </div>
       </div>
-      <br>
-      <br>
+      <br><br>
 
       <div class="row nightin-row justify-content-center align-items-center" id="nightin-row">
         <div class="col-6 pageNine">
@@ -139,12 +123,11 @@
         </div>
         <div class="col-6 pageTen">
           <div class="movie-container">
-            <img src="movie.png" class="img-fluid skydiveimg slide-right" alt="Disney Movie Projected On The Wall">
-            <audio src="test.m4a" id="audio1"></audio>
+            <img src="Assets/images/movie.png" class="img-fluid sideimg slide-right" alt="disney movie projected on the wall">
             <div class="flip-card">
               <div class="flip-card-layout">
                 <div class="unflipped-card">
-                  <img src="queensgambit.jpg" class="img-fluid movieimg slide-right" alt="Poster Of The TV Show Queens Gambit"
+                  <img src="Assets/images/queensgambit.jpg" class="img-fluid movieimg slide-right" alt="poster of the tv show Queens Gambit"
                   style="width:100%;height:100%">
                 </div>
                 <div class="flipped-card align">
@@ -162,11 +145,9 @@
       <div class="row quote-row justify-content-center align-items-center" id="quote-row">
         <div class="col-10">
           <h1 class="appear">"To see the world, things dangerous to come to, <br>to see behind walls, draw closer, <br>to find each other, and to feel. <br>That is the purpose of life."
-            <br><br>- The Secret Life of Walter Mitty</h1>
-          <audio src="test.m4a" id="audio1"></audio>
-          <img src="waltermitty.png" class="momentimg appear" alt="A Man Standing On Top Of A Mountain"
-          onclick="playAudio('audio1')">
-          <!-- https://writersodysseydotcom.files.wordpress.com/2016/02/the_secret_life_of_walter_mitty_by_janvavrusa-d7i49y9.png -->
+            <br><br><i>- The Secret Life of Walter Mitty</i></h1>
+          <img src="Assets/images/waltermitty.png" class="mainimg appear" alt="a man standing on top of a mountain">
+          <!-- image source: https://writersodysseydotcom.files.wordpress.com/2016/02/the_secret_life_of_walter_mitty_by_janvavrusa-d7i49y9.png -->
         </div>
       </div>
 
@@ -174,5 +155,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
   </body>
 </html>
