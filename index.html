@@ -18,108 +18,137 @@
 
   <body>
     <div class="container">
+     <!--  <div class="row arrow-row justify-content-end">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/></svg>
+      </div> -->
       <div class="row name-row align-items-center">
-        <div class="col-8 offset-2 appear">
+        <div class="col-4 offset-2 appear">
           <h1>CLARE<br>
           HONGEUN<br>
           LEE</h1>
           <h2>Story</h2>
-          <input type="button" class="name-row-button" value="Next" onclick="scrollToDiv('chapter-row')">
+          <input type="button" class="name-row-button" value="Let's Begin" onclick="scrollToDiv('chapter-row')">
+        </div>
+        <div class="col-6 appear">
+          <img src="clareprofile.png" class="profileimg slide-right" alt="Profile Photo Of Me Sitting On The Floor">
         </div>
       </div>
+      <br>
+      <br>
 
       <div class="row arrow-row justify-content-end">
-        <div class="col-2">
+        <div class="col-12">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-down-short" viewBox="0 0 16 16">
           <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z"/></svg>
        </div>
       </div>
         
       <div class="row scroll-row justify-content-end">
-        <div class="col-2">
-        Scroll
+        <div class="col-12">
+        Click Button or Scroll
         </div>
       </div>
 
-      <div class="row chapter-row justify-content-center align-items-center" id="chapter-row">
+      <div class="row chapter-row justify-content-center align-items-center text-center" id="chapter-row">
         <div class="col-6">
           <h1 class="slide-left">CHAPTER 1</h1>
           <h2 class="slide-left">What I love</h2>
+          <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('moment-row')">
         </div>
       </div>
       <br>
       <br>
-      <div class="row moment-row justify-content-center align-items-center">
+      <div class="row moment-row justify-content-center align-items-center" id="moment-row">
         <div class="col-6 pageOne">
           <h1 class="appear">Taking a walk & having a moment</h1>
           <h2 class="slide-left">“Because when you stop and look around, <br>this life is pretty amazing.” - Dr. Seuss</h2>
         </div>
         <div class="col-6 pageTwo">
-          <audio src="test.m4a" id="audio1"></audio>
+          <audio src="moment.m4a" id="audio2"></audio>
           <img src="nightmoment.gif" class="momentimg slide-right" alt="leaves gently rustling in the wind at night"
-          onclick="playAudio('audio1')">
+          onclick="playAudio('audio2')">
+          <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('yoga-row')">
         </div>
       </div>
       <br>
       <br>
-      <div class="row yoga-row justify-content-center align-items-center">
+      <div class="row yoga-row justify-content-center align-items-center" id="yoga-row">
         <div class="col-6 pageThree">
           <h1 class="appear">Doing yoga just the right amount</h1>
-          <h2 class="slide-left">Only do it to the point where your body<br> feels good - not more, not less.”</h2>
+          <h2 class="slide-left">"Only do it to the point where your body<br> feels good - not more, not less.”</h2>
         </div>
         <div class="col-6 pageFour">
           <audio src="test.m4a" id="audio1"></audio>
-          <img src="nightmoment.gif" class="momentimg slide-right" alt="leaves gently rustling in the wind at night"
+          <img src="yoga2.gif" class="img-fluid momentimg slide-right" alt="doing yoga in a dim room"
           onclick="playAudio('audio1')">
+          <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('sports-row')">
         </div>
       </div>
       <br>
       <br>
-      <div class="row sports-row justify-content-center align-items-center">
+      <div class="row sports-row justify-content-center align-items-center" id="sports-row">
         <div class="col-6 pageFive">
           <h1 class="appear">Getting an adrenaline rush <br>from facing my fears</h1>
           <h2 class="slide-left">“It’s a good day to be alive.”</h2>
         </div>
         <div class="col-6 pageSix">
           <audio src="test.m4a" id="audio1"></audio>
-          <img src="nightmoment.gif" class="momentimg slide-right" alt="leaves gently rustling in the wind at night"
+          <img src="scuba.gif" class="momentimg slide-right" alt="scuba diving"
           onclick="playAudio('audio1')">
+          <br>
+          <img src="skydive.JPG" class="img-fluid skydiveimg slide-right" alt="skydiving with victory hands">
+          <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('food-row')">
         </div>
       </div>
       <br>
       <br>
-      <div class="row food-row justify-content-center align-items-center">
+      <div class="row food-row justify-content-center align-items-center" id="food-row">
         <div class="col-6 pageSeven">
           <h1 class="appear">Enjoying good food <br>together with people I love</h1>
           <h2 class="slide-left">“Food is life. Life is food.”</h2>
         </div>
         <div class="col-6 pageEight">
           <audio src="test.m4a" id="audio1"></audio>
-          <img src="nightmoment.gif" class="momentimg slide-right" alt="leaves gently rustling in the wind at night"
+          <img src="foodgif.gif" class="momentimg slide-right" alt="Steaming hot seafood pasta"
           onclick="playAudio('audio1')">
+          <br>
+          <img src="koreanfood.png" class="img-fluid skydiveimg slide-right" alt="various delicious dishes on a table">
+          <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('nightin-row')">
         </div>
       </div>
       <br>
       <br>
-      <div class="row nightin-row justify-content-center align-items-center">
+      <div class="row nightin-row justify-content-center align-items-center" id="nightin-row">
         <div class="col-6 pageNine">
           <h1 class="appear">Having a night-in with <br>great movies and shows</h1>
-          <h2 class="slide-left">“I’m not anti-social. I’m just selectively social.”</h2>
+          <h2 class="slide-left">TBD</h2>
         </div>
         <div class="col-6 pageTen">
           <audio src="test.m4a" id="audio1"></audio>
-          <img src="nightmoment.gif" class="momentimg slide-right" alt="leaves gently rustling in the wind at night"
-          onclick="playAudio('audio1')">
+          <div class="flip-card">
+            <div class="flip-card-layout">
+              <div class="unflipped-card">
+                <img src="queensgambit.jpg" class="movieimg slide-right" alt="Poster Of The TV Show Queens Gambit"
+                onclick="playAudio('audio1')">
+              </div>
+              <div class="flipped-card">
+                <h1>Binge watched for 9+ hours</h1>
+              </div>
+            </div>
+          </div>
+          <input type="button" class="btn-primary next-button" value="Next" onclick="scrollToDiv('quote-row')">
         </div>
       </div>
       <br>
       <br>
-      <div class="row quote-row justify-content-center">
-        <div class="col-8">
-          <h1 class="appear">To see the world, things dangerous to come to, <br>to see behind walls, draw closer, <br>to find each other, and to feel. <br>That is the purpose of life. - Walter Mitty</h1>
+      <div class="row quote-row justify-content-center align-items-center" id="quote-row">
+        <div class="col-10">
+          <h1 class="appear">"To see the world, things dangerous to come to, <br>to see behind walls, draw closer, <br>to find each other, and to feel. <br>That is the purpose of life."  - Walter Mitty</h1>
           <audio src="test.m4a" id="audio1"></audio>
-          <img src="nightmoment.gif" class="momentimg slide-right" alt="leaves gently rustling in the wind at night"
+          <img src="waltermitty.png" class="momentimg appear" alt="A Man Standing On Top Of A Mountain"
           onclick="playAudio('audio1')">
+          <!-- https://writersodysseydotcom.files.wordpress.com/2016/02/the_secret_life_of_walter_mitty_by_janvavrusa-d7i49y9.png -->
         </div>
       </div>
 
